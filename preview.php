@@ -16,6 +16,8 @@ session_start();
     <link rel="stylesheet" href="css/style.css">
     <!-- preview -->
     <link rel="stylesheet" href="css/preview.css">
+    <!-- layout01 -->
+    <link rel="stylesheet" href="./css/layout01.css">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap"
         rel="stylesheet">

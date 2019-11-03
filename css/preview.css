@@ -1,19 +1,5 @@
-/* preview */
-.bgtext {
-    padding-top: 2rem;
-    padding-left: 2rem;
-    font-size: 10rem;
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.349);
-    transform: skew(-5deg) rotate(5deg);
-}
-
 .design {
-    position: absolute;
-    left: 50%;
-    top: 50%;
     transform: translate(-50%, -50%) skew(-5deg) rotate(5deg);
-    transform-origin: center;
 }
 
 .design::after {
@@ -23,7 +9,6 @@
 .design .p_photo{
     width: 10rem;
     height: 12rem;
-    border: 1px solid #000;
     margin: 1rem auto 2rem auto;
     border-radius: 1rem;
 }
@@ -40,7 +25,6 @@
 
 .p_name_job p:nth-of-type(1) {
     font-size: 0.7rem;
-    color:#aaa;
     text-align: left;
     margin-left: 1rem;
     margin-bottom: 0.5rem;
@@ -59,7 +43,6 @@
 }
 
 .p_email_phone span {
-    color: #aaa;
     font-size: 0.5rem;
     padding-right: 1rem;
 }
@@ -72,7 +55,6 @@
 }
 
 .p_info p:nth-of-type(1) {
-    color: #aaa;
     font-size: 0.5rem;
     padding-right: 1rem;
 }
@@ -81,8 +63,6 @@ button {
     outline: none;
     width: 5rem;
     height: 2rem;
-    background-color: #333;
-    color: #fff;
     border: none;
     position: absolute;
     bottom: 9%;
@@ -91,7 +71,5 @@ button {
 }
 
 button:hover{
-    background-color: rgb(21, 255, 0);
-    color: #000;
     cursor: pointer;
 }

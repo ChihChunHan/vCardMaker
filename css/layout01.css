@@ -111,12 +111,7 @@ form p {
 
 /* preview */
 .bgtext {
-    padding-top: 2rem;
-    padding-left: 2rem;
-    font-size: 10rem;
-    font-weight: 900;
     color: rgba(255, 255, 255, 0.349);
-    transform: skew(-5deg) rotate(5deg);
 }
 
 .design .p_photo{

@@ -40,8 +40,8 @@ session_start();
                 <p>info</p>
                 <p></p><?= $_SESSION['info'] ?></p>
             </div>
+            <button onclick="window.history.go(-1)">回頁面</button>
         </div>
-        <button onclick="window.history.go(-1)">回頁面</button>
     </div>
 </body>
 

@@ -8,6 +8,7 @@
 
 .design {
     transform: translate(-50%, -50%) skew(-5deg) rotate(5deg);
+    border-bottom: none;
 }
 
 .design::after {
@@ -21,12 +22,16 @@
     border-radius: 1rem;
 }
 
+.design div {
+    margin: 1rem;
+}
 
 .p_name_job{
-    margin: 0;
-    width: 40%;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    display: block;
+    width: 30%;
     float: left;
-    border-bottom: none;
     height: 2rem;
     line-height: 1rem;
 }
@@ -34,25 +39,28 @@
 .p_name_job p:nth-of-type(1) {
     font-size: 0.7rem;
     text-align: left;
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
+    /* margin-left: 1rem; */
+    margin-bottom: 0.4rem;
 }
 .p_name_job p:nth-of-type(2) {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .p_email_phone {
     margin: 0;
-    width: 40%;
+    width: 50%;
     float: right;
     text-align-last: left;
+    font-size: 0.7rem;
     height: 2rem;
-    line-height: 1rem;
+    line-height: 1.2rem;
 }
 
 .p_email_phone span {
+    display: inline-block;
+    width: 2rem;
     font-size: 0.5rem;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
 .p_info{
@@ -65,6 +73,7 @@
 .p_info p:nth-of-type(1) {
     font-size: 0.5rem;
     padding-right: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 button {

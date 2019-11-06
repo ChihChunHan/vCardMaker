@@ -13,7 +13,7 @@
     <!-- style -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- layout01 -->
-    <link rel="stylesheet" href="./css/layout01.css">
+    <link id="css" rel="stylesheet" href="./css/layout01.css">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap"
         rel="stylesheet">
@@ -24,7 +24,7 @@
         <div class="design">
             <h1><span>vCard</span>產生器</h1>
             <!-- form -->
-            <form action="api.php" method="post" enctype="multipart/form-data">
+            <form id="form" action="api.php" method="post" enctype="multipart/form-data">
                 <div class="name">
                     <p>姓　　名</p><input type="text" name="name" id="" placeholder="請輸入姓名" value="han">
                 </div>
@@ -44,14 +44,23 @@
                     <p>人像照片</p><input type="file" name="photo" id="">
                 </div>
                 <div class="css">
-                    <p>選擇版型</p><select name="css" id="">
-                        <option value="layout_01">layout01</option>
+                    <p>選擇版型</p>
+                    <select name="css" id="selected">
+                    <option value="css/layout01.css" selected>layout01</option>
+                    <option value="css/layout02.css">layout02</option>
                     </select>
                 </div>
                 <input type="submit" value="預覽">
             </form>
         </div>
     </div>
+    <script>
+    var css = 'http://127.0.0.1/github/vCardMaker/';
+    var select = document.getElementById('selected');
+    select.onchange = function(){
+        let get = css + select.value;
+        document.getElementById('css').href = get;
+    }
+    </script>
 </body>
-
 </html>

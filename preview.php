@@ -17,7 +17,7 @@ session_start();
     <!-- preview -->
     <link rel="stylesheet" href="css/preview.css">
     <!-- layout01 -->
-    <link rel="stylesheet" href="./css/layout01.css">
+    <link rel="stylesheet" href="<?=$_SESSION['css']?>">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap"
         rel="stylesheet">
@@ -27,7 +27,7 @@ session_start();
     <div class="main movebg">
         <div class="bgtext">Vcard</div>
         <div class="design">
-            <div class="p_photo" style="background:url('file_img/<?= $_SESSION['photo'] ?>')"></div>
+            <div class="p_photo" style="background:url('file_img/<?= $_SESSION['photo'] ?>');background-size: cover;background-repeat: no-repeat;background-position-x: center;"></div>
             <div class="p_name_job">
                 <p><?= $_SESSION['job'] ?></p>
                 <p><?= $_SESSION['name'] ?></p>
@@ -36,6 +36,7 @@ session_start();
                 <p><span>email</span><?= $_SESSION['email'] ?></p>
                 <p><span>phone</span><?= $_SESSION['phone'] ?></p>
             </div>
+            <hr>
             <div class="p_info">
                 <p>info</p>
                 <p></p><?= $_SESSION['info'] ?></p>
